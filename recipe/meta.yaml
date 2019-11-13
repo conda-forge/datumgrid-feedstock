@@ -1,4 +1,4 @@
-{% set europe_ver = "1.3" %}
+{% set europe_ver = "1.4" %}
 {% set north_america_ver = "1.2" %}
 {% set oceania_ver = "1.0" %}
 {% set world_ver = "1.0" %}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: http://download.osgeo.org/proj/proj-datumgrid-europe-{{ europe_ver }}.tar.gz
-    sha256: a6345a4a10c656ba436515c5890a67c7cc8a861a572cb562d03f3a228345a78f
+    sha256: 79283d89e24953716cd3390d48e17f1cb38144dd7fc90472a8e48c863df5545d
     folder: proj-datumgrid-europe
 
   - url: http://download.osgeo.org/proj/proj-datumgrid-north-america-{{ north_america_ver }}.tar.gz
@@ -24,11 +24,11 @@ source:
     folder: proj-datumgrid-world
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   run:
-    - proj4
+    - proj
 
 test:
   commands:
