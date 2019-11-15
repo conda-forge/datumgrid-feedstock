@@ -24,7 +24,7 @@ source:
     folder: proj-datumgrid-world
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   run:
@@ -66,3 +66,4 @@ about:
 extra:
   recipe-maintainers:
     - ocefpaf
+    - xylar
