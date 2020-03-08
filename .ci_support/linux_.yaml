@@ -5,4 +5,4 @@ channel_targets:
 docker_image:
 - condaforge/linux-anvil-comp7
 proj:
-- 6.2.1
+- 6.3.1
