@@ -5,11 +5,9 @@ Home: https://github.com/OSGeo/proj-datumgrid
 
 Package license: Public domain | X/MIT | BSD-2/3/4-Clause | CC0 | CC-BY (v3.0 or later) | CC-BY-SA (v3.0 or later)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datumgrid-feedstock/blob/master/LICENSE.txt)
 
 Summary: Cartographic Projections and Coordinate Transformations Library
-
-
 
 Current build status
 ====================
@@ -29,36 +27,30 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7047&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/datumgrid-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/datumgrid-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7047&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/datumgrid-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/datumgrid-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win</td>
+              <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7047&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/datumgrid-feedstock?branchName=master&jobName=win&configuration=win_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/datumgrid-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
@@ -68,6 +60,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-proj--datumgrid-green.svg)](https://anaconda.org/conda-forge/proj-datumgrid) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/proj-datumgrid.svg)](https://anaconda.org/conda-forge/proj-datumgrid) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/proj-datumgrid.svg)](https://anaconda.org/conda-forge/proj-datumgrid) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/proj-datumgrid.svg)](https://anaconda.org/conda-forge/proj-datumgrid) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-proj--datumgrid--europe-green.svg)](https://anaconda.org/conda-forge/proj-datumgrid-europe) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/proj-datumgrid-europe.svg)](https://anaconda.org/conda-forge/proj-datumgrid-europe) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/proj-datumgrid-europe.svg)](https://anaconda.org/conda-forge/proj-datumgrid-europe) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/proj-datumgrid-europe.svg)](https://anaconda.org/conda-forge/proj-datumgrid-europe) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-proj--datumgrid--north--america-green.svg)](https://anaconda.org/conda-forge/proj-datumgrid-north-america) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/proj-datumgrid-north-america.svg)](https://anaconda.org/conda-forge/proj-datumgrid-north-america) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/proj-datumgrid-north-america.svg)](https://anaconda.org/conda-forge/proj-datumgrid-north-america) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/proj-datumgrid-north-america.svg)](https://anaconda.org/conda-forge/proj-datumgrid-north-america) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-proj--datumgrid--oceania-green.svg)](https://anaconda.org/conda-forge/proj-datumgrid-oceania) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/proj-datumgrid-oceania.svg)](https://anaconda.org/conda-forge/proj-datumgrid-oceania) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/proj-datumgrid-oceania.svg)](https://anaconda.org/conda-forge/proj-datumgrid-oceania) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/proj-datumgrid-oceania.svg)](https://anaconda.org/conda-forge/proj-datumgrid-oceania) |
@@ -80,25 +73,27 @@ Installing `datumgrid` from the `conda-forge` channel can be achieved by adding 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `proj-datumgrid-europe, proj-datumgrid-north-america, proj-datumgrid-oceania, proj-datumgrid-world` can be installed with:
+Once the `conda-forge` channel has been enabled, `proj-datumgrid, proj-datumgrid-europe, proj-datumgrid-north-america, proj-datumgrid-oceania, proj-datumgrid-world` can be installed with:
 
 ```
-conda install proj-datumgrid-europe proj-datumgrid-north-america proj-datumgrid-oceania proj-datumgrid-world
+conda install proj-datumgrid proj-datumgrid-europe proj-datumgrid-north-america proj-datumgrid-oceania proj-datumgrid-world
 ```
 
-It is possible to list all of the versions of `proj-datumgrid-europe` available on your platform with:
+It is possible to list all of the versions of `proj-datumgrid` available on your platform with:
 
 ```
-conda search proj-datumgrid-europe --channel conda-forge
+conda search proj-datumgrid --channel conda-forge
 ```
 
 
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -150,9 +145,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
